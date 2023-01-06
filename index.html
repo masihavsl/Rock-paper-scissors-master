@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock, Paper, Scissors</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="score-board">
+      <div class="board">
+        <img src="images/logo.svg" class="title" />
+        <div class="score">
+          <p>SCORE</p>
+          <h1 class="score-digit">0</h1>
+        </div>
+      </div>
+    </header>
+    <div class="options">
+      <button class="paper" op></button>
+      <button class="scissors" op></button>
+      <button class="rock" op></button>
+    </div>
+    <div class="rules-wrapper hidden">
+      <div class="rules-page hidden">
+        <div class="head">
+          <h1>RULES</h1>
+          <button class="x"><img src="images/icon-close.svg" /></button>
+        </div>
+        <img src="images/image-rules.svg" />
+      </div>
+    </div>
+    <div class="game-result hidden">
+      <div class="your-move">
+        <h2>YOU PICKED</h2>
+        <div class="you">
+          <div class="you-picked"></div>
+        </div>
+      </div>
+      <div class="result hidden">
+        <h1 class="result-text">YOU LOSE</h1>
+        <button class="again">PLAY AGAIN</button>
+      </div>
+      <div class="their-move">
+        <h2>THE HOUSE PICKED</h2>
+        <div class="they hidden winner">
+          <div class="they-picked"></div>
+        </div>
+        <div class="before-picking"></div>
+      </div>
+    </div>
+
+    <button class="rules">RULES</button>
+
+    <footer>
+      <p>CHALLENGE BY FRONTEND MENTOR. CODED BY MASIHA VESALI.</p>
+    </footer>
+  </body>
+</html>
